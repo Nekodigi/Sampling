@@ -1,8 +1,9 @@
-float scale = 500;
+float scale = 200;
 ArrayList<PVector> ps = new ArrayList<PVector>();
 
 void setup(){
-  fullScreen(P3D);
+  //fullScreen(P3D);
+  size(500, 500, P3D);
   strokeWeight(20);
 }
 

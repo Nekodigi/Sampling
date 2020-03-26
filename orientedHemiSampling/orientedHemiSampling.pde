@@ -1,11 +1,11 @@
-float scale = 1000;
+float scale = 200;
 float angle = 0;
 ArrayList<PVector> ps = new ArrayList<PVector>();
 
 void setup(){
-  fullScreen(P3D);
-  //size(500, 500, P3D);
-  strokeWeight(20);
+  //fullScreen(P3D);
+  size(500, 500, P3D);
+  strokeWeight(5);
 }
 
 void draw(){
