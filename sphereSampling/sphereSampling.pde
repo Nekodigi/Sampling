@@ -15,15 +15,13 @@ void draw(){
   noStroke();
   sphere(500);
   stroke(0);
-  ps.add(sphereSampling().mult(scale));
+  ps.add(sphereSampling(random(-1, 1), random(TWO_PI)).mult(scale));
   for(PVector p : ps){
     point(p.x, p.y, p.z);
   }
 }
 
-PVector sphereSampling(){//https://mathworld.wolfram.com/SpherePointPicking.html
-  float u = random(-1, 1);
-  float theta = random(TWO_PI);
+PVector sphereSampling(float u, float theta){//https://mathworld.wolfram.com/SpherePointPicking.html
   float x = sqrt(1-u*u)*cos(theta);
   float y = sqrt(1-u*u)*sin(theta);
   return new PVector(x, y, u);
