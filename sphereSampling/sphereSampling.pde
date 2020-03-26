@@ -4,7 +4,7 @@ ArrayList<PVector> ps = new ArrayList<PVector>();
 void setup(){
   //fullScreen(P3D);
   size(500, 500, P3D);
-  strokeWeight(20);
+  strokeWeight(5);
 }
 
 void draw(){
